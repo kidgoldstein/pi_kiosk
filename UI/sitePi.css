@@ -1,0 +1,21 @@
+#splash-button {
+  position: relative;
+  top: -46px; left: 68px; bottom: 0; right: 0;
+  z-index: 1;
+}
+
+.btn-splash{
+    padding: 4px 54px;
+    font-size: 18px;
+    line-height: normal;
+    -webkit-border-radius: 8px;
+       -moz-border-radius: 8px;
+            border-radius: 8px;
+    color: white;
+    background-color: #2B6EAD;
+}
+
+.btn-splash:hover{
+    background: #7eb764;
+    color: white;
+}

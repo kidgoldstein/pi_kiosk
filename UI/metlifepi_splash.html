@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>MetLife Pi</title>
+        <link href="Content/css/bootstrap.min.css" rel="stylesheet"/>
+        <link href="sitePi.css" rel="stylesheet"/>
+    </head>
+    <body onload="resize()" onresize="resize()">
+        <div id="main">
+            <img src="Content/img/metlifePi.png" width=350/>
+            <br/>
+            <button type="button" class="btn btn-default btn-splash" id="splash-button" onclick="piScreen()">Go!</button>
+        </div>
+        <script>
+            function piScreen()
+            {
+                window.location.href = "piBuild.php";
+            }
+        </script>
+        <script>
+            function resize()
+            {
+                var w = window,
+                d = document,
+                e = d.documentElement,
+                g = d.getElementsByTagName('body')[0],
+                x = w.innerWidth || e.clientWidth || g.clientWidth,
+                y = w.innerHeight|| e.clientHeight|| g.clientHeight;
+                var posWidth = (x-350)/2;
+                var posHeight = (y-120)/2;
+                document.getElementById("main").style.marginLeft = posWidth + 'px';
+                document.getElementById("main").style.marginTop = posHeight + 'px';
+            }
+        </script>
+    </body>
+</html>
